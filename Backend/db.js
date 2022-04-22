@@ -6,8 +6,10 @@ const mongooseURL =
 
 const connectToMongo = () => {
   mongoose.connect(mongooseURL, () => {
-    console.log("Connect to mongoose succesfully");
+    console.log("Connect to mongoose successfully");
   });
 };
 
 module.exports = connectToMongo;
+
+

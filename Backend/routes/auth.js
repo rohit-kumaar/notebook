@@ -12,6 +12,8 @@ const fetchuser = require("../middleware/fetchuser");
 //ROUTE 1: Create a User using: POST "/api/auth/createuser". No login required
 router.post(
   "/createuser",
+
+  
   [
     // https://express-validator.github.io/docs/
     body("name", "Enter a valid name").isLength({ min: 3 }),
