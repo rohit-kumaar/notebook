@@ -35,6 +35,8 @@ const NoteState = (props) => {
       },
       body: JSON.stringify({ title, description, tag }),
     });
+    const json = response.json();
+    console.log(json);
 
     console.log("Your note is added");
     const note = {
@@ -83,6 +85,7 @@ const NoteState = (props) => {
       body: JSON.stringify({ title, description, tag }),
     });
     const json = response.json();
+    console.log(json);
 
     // Logic to Edit in client
     for (let index = 0; index < notes.length; index++) {
